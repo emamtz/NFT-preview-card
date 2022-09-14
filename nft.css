@@ -1,5 +1,6 @@
 .attribution {
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
     text-align: center;
 }
 
@@ -92,22 +93,32 @@ body {
 .text3 {
     color: #33FAF8;
     position: absolute;
-    top: 460px;
-    left: 20px;
+    top: 458px;
+    left: 40px;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
-
-.text4 {
+.icon1 {
+    color: #33FAF8;
     position: absolute;
     top: 460px;
+    left: 20px;
+}
+.text4 {
+    position: absolute;
+    top: 458px;
     left: 270px;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     font-weight: 300;
+    color: #7D91AD;
 }
-
+.icon2 {
+    position: absolute;
+    top: 460px;
+    left: 245px;
+}
 .linea {
     background: #2E4058;
     position: absolute;
@@ -124,7 +135,8 @@ body {
     left: 20px;
     width: 40px;
     height: 40px;
-
+    box-shadow: 0px 0px 0px 1px white;
+    border-radius: 50%;
 }
 
 .text5 {
@@ -153,14 +165,135 @@ body {
 }
 
 
+@media screen and (max-width: 375px) {
+    body {
+    
+            background: #0D1A2D;
+            margin: 5px;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+    
+        .container {
+            position: relative;
+            border-radius: 20px;
+            height: 600px;
+            width: 350px;
+            left: 12px;
+            background: #14273F;
+            box-shadow: 1px 1px 30px 30px #0B182C;
+        }
+    
+        .image img {
+            width: 310px;
+            height: 280px;
+            border-radius: 10px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
 
-/*    position: absolute;
-    text-align: center;
-    top: 350px;
-    left: 330px px;
-    right: 7px;
-    height: 35px;
-    width: 240px;
-    border-radius: 5px;
-    border: none;
-    backface-visibility: hidden;*/
+                .text1 {
+                    position: absolute;
+                    top: 330px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: white;
+                    left: 20px;
+                    cursor: pointer;
+                }
+                .text2 {
+                    color: #7D91AD;
+                    position: absolute;
+                    top: 380px;
+                    left: 20px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+        
+                }
+        
+                .text3 {
+                    color: #33FAF8;
+                    position: absolute;
+                    top: 458px;
+                    left: 40px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .icon1 {
+                    color: #33FAF8;
+                        position: absolute;
+                        top: 460px;
+                        left: 20px;
+                }
+                .text4 {
+                    position: absolute;
+                    top: 457px;
+                    left: 230px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #7D91AD;
+                }
+                .icon2 {
+                position: absolute;
+                    top: 460px;
+                    left: 205px;
+                }
+                .linea {
+                    background: #2E4058;
+                    position: absolute;
+                    top: 500px;
+                    left: 20px;
+                    height: 1px;
+                    width: 310px;
+        
+                }
+        
+                .perfil img {
+                    position: absolute;
+                    top: 530px;
+                    left: 20px;
+                    width: 40px;
+                    height: 40px;
+                    box-shadow: 0px 0px 0px 1px white;
+                    border-radius: 50%;
+                }
+        
+                .text5 {
+                    color: #7D91AD;
+                    position: absolute;
+                    top: 540px;
+                    left: 80px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+        
+                .text6 {
+                    color: white;
+                    position: absolute;
+                    top: 540px;
+                    left: 175px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    cursor: pointer;
+                }
+
+                                .attribution {
+                                    font-size: 25px;
+                                    text-align: center;
+                                    font-family: 'Outfit', sans-serif;
+                                }
+                
+                                .attribution a {
+                                    color: hsl(228, 45%, 44%);
+                                }
+        
+}

@@ -1,5 +1,5 @@
-/*<style>.attribution {
-    font-size: 11px;
+.attribution {
+    font-size: 25px;
     text-align: center;
 }
 
@@ -7,10 +7,9 @@
     color: hsl(228, 45%, 44%);
 }
 
-</style>*/
 
 body {
-    
+
     background: #0D1A2D;
     margin: 5px;
     height: 100vh;
@@ -18,21 +17,52 @@ body {
     display: grid;
     place-items: center;
 }
+
 .container {
-        position: relative;
-        border-radius: 20px;
-        height: 600px;
-        width: 400px;            
-        background: #14273F;
+    position: relative;
+    border-radius: 20px;
+    height: 600px;
+    width: 400px;
+    background: #14273F;
+    box-shadow: 1px 1px 30px 30px #0B182C;
 }
+
 .image img {
     width: 360px;
     height: 280px;
     border-radius: 10px;
     position: absolute;
-   left: 20px;
-   top: 20px;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
 }
+
+.opacity img {
+    width: 50px;
+    height: 50px;
+    top: 110px;
+    left: 155px;
+    position: absolute;
+}
+
+.image figure .opacity {
+    width: 360px;
+    height: 280px;
+    left: 20px;
+    top: 20px;
+    border-radius: 10px;
+    background: #33FAF8;
+    position: absolute;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.image figure:hover>.opacity {
+    opacity: 0.5;
+    visibility: visible;
+    cursor: pointer;
+}
+
 .text1 {
     position: absolute;
     top: 330px;
@@ -43,6 +73,11 @@ body {
     left: 20px;
     cursor: pointer;
 }
+
+.text1:hover {
+    color: #33FAF8;
+}
+
 .text2 {
     color: #7D91AD;
     position: absolute;
@@ -53,6 +88,7 @@ body {
     font-weight: 300;
 
 }
+
 .text3 {
     color: #33FAF8;
     position: absolute;
@@ -62,6 +98,7 @@ body {
     font-size: 18px;
     font-weight: 400;
 }
+
 .text4 {
     position: absolute;
     top: 460px;
@@ -70,6 +107,7 @@ body {
     font-size: 18px;
     font-weight: 300;
 }
+
 .linea {
     background: #2E4058;
     position: absolute;
@@ -79,13 +117,16 @@ body {
     width: 360px;
 
 }
+
 .perfil img {
     position: absolute;
     top: 530px;
     left: 20px;
     width: 40px;
     height: 40px;
+
 }
+
 .text5 {
     color: #7D91AD;
     position: absolute;
@@ -95,6 +136,7 @@ body {
     font-size: 18px;
     font-weight: 300;
 }
+
 .text6 {
     color: white;
     position: absolute;
@@ -103,7 +145,13 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     font-weight: 300;
+    cursor: pointer;
 }
+
+.text6:hover {
+    color: #33FAF8;
+}
+
 
 
 /*    position: absolute;
@@ -116,6 +164,3 @@ body {
     border-radius: 5px;
     border: none;
     backface-visibility: hidden;*/
-    
-    
-  

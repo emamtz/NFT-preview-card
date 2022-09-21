@@ -20,150 +20,121 @@ body {
 }
 
 .container {
-    position: relative;
+    padding: 20px 20px 20px 20px;
     border-radius: 20px;
-    height: 600px;
+    height: 640px;
     width: 400px;
     background: #14273F;
     box-shadow: 1px 1px 30px 30px #0B182C;
 }
-
+.image {
+    position: relative;
+        width: 399px;
+        height: 329px;
+        border-radius: 12px;
+        background-color: hsl(178, 100%, 50%);
+}
 .image img {
-    width: 360px;
-    height: 280px;
+    width: 400px;
+    height: 330px;
     border-radius: 10px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    cursor: pointer;
 }
-
-.opacity img {
+.image svg {
+        display: none;
+        }
+.image:hover svg {
+    top: 10px;
+    left: 0;
+    display: block;
+    position: absolute;
     width: 50px;
-    height: 50px;
-    top: 110px;
-    left: 155px;
-    position: absolute;
-}
-
-.image figure .opacity {
-    width: 360px;
-    height: 280px;
-    left: 20px;
-    top: 20px;
+    cursor: pointer;
     border-radius: 10px;
-    background: #33FAF8;
-    position: absolute;
-    opacity: 0.5;
-    visibility: hidden;
+    padding: 125px 180px 128px 180px;
+    transition: 0.3s;
 }
-
-.image figure:hover>.opacity {
+.image:hover img{
     opacity: 0.5;
-    visibility: visible;
-    cursor: pointer;
 }
-
 .text1 {
-    position: absolute;
-    top: 330px;
     font-family: 'Outfit', sans-serif;
-    font-size: 25px;
     font-weight: 600;
-    color: white;
-    left: 20px;
+    font-size: 30px;
     cursor: pointer;
+    padding: 44px 0px 20px 0px;
+    color: white;
+    width: 247px;
 }
-
 .text1:hover {
-    color: #33FAF8;
+    color: hsl(178, 100%, 50%);
 }
-
 .text2 {
-    color: #7D91AD;
-    position: absolute;
-    top: 380px;
-    left: 20px;
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-
+        font-weight: 300;
+        font-size: 25px;
+        color: hsl(215, 51%, 70%);
 }
-
 .text3 {
-    color: #33FAF8;
-    position: absolute;
-    top: 458px;
-    left: 40px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+width: 160px;
+color: hsl(178, 100%, 50%);
+font-family: 'Outfit', sans-serif;
+font-weight: 400;
+font-size: 20px;
+padding: 20px 0px 0px 0px;
 }
-.icon1 {
-    color: #33FAF8;
-    position: absolute;
-    top: 460px;
-    left: 20px;
+.text3 svg {
+    padding-right: 5px;
 }
 .text4 {
-    position: absolute;
-    top: 458px;
-    left: 270px;
+    text-align: right;
+    color: hsl(215, 51%, 70%);
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
     font-weight: 300;
-    color: #7D91AD;
+    font-size: 20px;
+    padding: 20px 0px 0px 0px;
+    margin-top: -45px;
 }
-.icon2 {
-    position: absolute;
-    top: 460px;
-    left: 245px;
+.text4 svg {
+    padding-right: 5px;
 }
 .linea {
     background: #2E4058;
-    position: absolute;
-    top: 500px;
-    left: 20px;
-    height: 1px;
-    width: 360px;
-
+    width: 400px;
+    height: 0.1px;
+    margin-top: 30px;
 }
-
-.perfil img {
-    position: absolute;
-    top: 530px;
-    left: 20px;
+.perfil {
+    margin-top: 30px;
     width: 40px;
     height: 40px;
-    box-shadow: 0px 0px 0px 1px white;
     border-radius: 50%;
+    box-shadow: 0px 0px 1px 1.5px white;
 }
-
+.perfil img {
+    width: 40px;
+        height: 40px;
+}
 .text5 {
-    color: #7D91AD;
-    position: absolute;
-    top: 540px;
-    left: 80px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+        color: hsl(215, 51%, 70%);
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        padding: 11px 0px 0px 60px;
+        margin-top: -45px;
 }
-
 .text6 {
-    color: white;
-    position: absolute;
-    top: 540px;
-    left: 175px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    cursor: pointer;
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        padding: 11px 0px 0px 170px;
+        margin-top: -36px;
+        cursor: pointer;
+        width: 116px;
 }
-
 .text6:hover {
-    color: #33FAF8;
+    color: hsl(178, 100%, 50%);
 }
-
 
 @media screen and (max-width: 375px) {
     body {
@@ -177,123 +148,123 @@ body {
         }
     
         .container {
-            position: relative;
+            padding: 20px 20px 20px 20px;
             border-radius: 20px;
-            height: 600px;
-            width: 350px;
-            left: 12px;
+            height: 640px;
+            width: 340px;
+            margin: 20px 20px 20px 20px;
             background: #14273F;
             box-shadow: 1px 1px 30px 30px #0B182C;
         }
     
-        .image img {
-            width: 310px;
-            height: 280px;
-            border-radius: 10px;
-            position: absolute;
-            left: 20px;
-            top: 20px;
+        .image {
+            position: relative;
+            width: 340px;
+            height: 330px;
+            border-radius: 12px;
+            background: none;
         }
-
-                .text1 {
-                    position: absolute;
-                    top: 330px;
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 25px;
-                    font-weight: 600;
-                    color: white;
-                    left: 20px;
-                    cursor: pointer;
+    
+        .image img {
+            width: 340px;
+            height: 330px;
+            border-radius: 10px;
+        }
+    
+        .image svg {
+            display: none;
+        }
+        .text1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 44px 0px 20px 0px;
+            color: white;
+            width: 247px;
                 }
-                .text2 {
-                    color: #7D91AD;
-                    position: absolute;
-                    top: 380px;
-                    left: 20px;
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 20px;
-                    font-weight: 300;
-        
-                }
-        
-                .text3 {
-                    color: #33FAF8;
-                    position: absolute;
-                    top: 458px;
-                    left: 40px;
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 18px;
-                    font-weight: 400;
-                }
-                .icon1 {
-                    color: #33FAF8;
-                        position: absolute;
-                        top: 460px;
-                        left: 20px;
-                }
-                .text4 {
-                    position: absolute;
-                    top: 457px;
-                    left: 230px;
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 18px;
-                    font-weight: 300;
-                    color: #7D91AD;
-                }
-                .icon2 {
-                position: absolute;
-                    top: 460px;
-                    left: 205px;
-                }
-                .linea {
-                    background: #2E4058;
-                    position: absolute;
-                    top: 500px;
-                    left: 20px;
-                    height: 1px;
-                    width: 310px;
-        
-                }
-        
-                .perfil img {
-                    position: absolute;
-                    top: 530px;
-                    left: 20px;
-                    width: 40px;
-                    height: 40px;
-                    box-shadow: 0px 0px 0px 1px white;
-                    border-radius: 50%;
-                }
-        
-                .text5 {
-                    color: #7D91AD;
-                    position: absolute;
-                    top: 540px;
-                    left: 80px;
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 18px;
-                    font-weight: 300;
-                }
-        
-                .text6 {
-                    color: white;
-                    position: absolute;
-                    top: 540px;
-                    left: 175px;
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 18px;
-                    font-weight: 300;
-                    cursor: pointer;
-                }
-
-                                .attribution {
-                                    font-size: 25px;
-                                    text-align: center;
-                                    font-family: 'Outfit', sans-serif;
-                                }
+        .text2 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            font-size: 25px;
+            color: hsl(215, 51%, 70%);
+            }
                 
-                                .attribution a {
-                                    color: hsl(228, 45%, 44%);
-                                }
-        
+            .text3 {
+            width: 160px;
+            color: hsl(178, 100%, 50%);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            padding: 20px 0px 0px 0px;
+            }
+                
+            .text3 svg {
+            padding-right: 5px;
+            }
+                
+            .text4 {
+            text-align: right;
+            color: hsl(215, 51%, 70%);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            padding: 20px 0px 0px 0px;
+            margin-top: -45px;
+            }
+                
+            .text4 svg {
+            padding-right: 5px;
+            }
+                
+            .linea {
+            background: #2E4058;
+            width: 340px;
+            height: 0.1px;
+            margin-top: 30px;
+            }
+                
+            .perfil {
+            margin-top: 30px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 1px 1.5px white;
+            }
+                
+            .perfil img {
+            width: 40px;
+            height: 40px;
+            }
+                
+            .text5 {
+            color: hsl(215, 51%, 70%);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            padding: 11px 0px 0px 60px;
+            margin-top: -45px;
+            }
+                
+            .text6 {
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            padding: 11px 0px 0px 170px;
+            margin-top: -36px;
+            cursor: pointer;
+            width: 116px;
+            }
+            
+            
+            .attribution {
+            font-size: 25px;
+            font-family: 'Outfit', sans-serif;
+            text-align: center;
+            }
+            
+            .attribution a {
+            color: hsl(228, 45%, 44%);
+            }
 }
